@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mystyle.css') }}">
+</head>
+
+<title>FNA Tool</title>
+
+<ul>
+  <li><a class="active" href="{{ url_for('home')}}">Home</a></li>
+  <li><a href="{{ url_for('marker1home')}}">CXCR6 App</a></li>
+  <li><a href="{{ url_for('marker2home')}}">CD8 TRM App</a></li>
+</ul>
+
+   <body>
+      <h1>Sample Quality</h1>
+      Your sample is {{probability}}% liver-like.
+      <div><img src='{{graph}}'/></div>
+      <button type="button" onclick="window.location.href='{{ url_for('marker1home')}}';">
+         Try another sample...
+      </button>
+   </body>
+
+</html>

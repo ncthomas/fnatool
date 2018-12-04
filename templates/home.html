@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mystyle.css') }}">
+</head>
+
+<title>FNA Tool</title>
+
+<ul>
+  <li><a class="active" href="{{ url_for('home')}}">Home</a></li>
+  <li><a href="{{ url_for('marker1home')}}">CXCR6 App</a></li>
+  <li><a href="{{ url_for('marker2home')}}">CD8 TRM App</a></li>
+</ul>
+
+   <body>
+      <h1>Welcome to the FNA Tool</h1>
+      <p class='default'>
+        Please select the required app from the menu.
+      </p>
+   </body>
+
+</html>
